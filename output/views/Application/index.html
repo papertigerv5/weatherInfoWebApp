@@ -1,0 +1,53 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div class="container excontent">
+    <form class="form-inline" action="@{Application.index()}" method="POST">
+        <fieldset>
+            <input name="cityName" type="text" placeholder="${placeName}"/>
+            <button type="submit" class="btn">Submit</button>
+        </fieldset>
+    </form>
+
+    <div class="container excontent">
+        <table class="table table-hover table-bordered">
+            <caption>&{'city'}&{'weather'}&{'status'}</caption>
+            <thead>
+                <td>&{'city'}&{'name'}</td>
+                <td>&{'weather'}&{'status'}</td>
+                <td>&{'wind'}&{'direction'}</td>
+                <td>&{'wind'}&{'level'}</td>
+                <td>&{'publish'}&{'time'}</td>
+                <td>&{'publish'}&{'hour'}</td>
+            </thead>
+            <tbody>
+                #{list items:results,as:'infoBean'}
+                <tr>
+                    <td>${infoBean.districtName}</td>
+                    <td>${infoBean.status}</td>
+                    <td>${infoBean.windDirection}</td>
+                    <td>${infoBean.windLevel}</td>
+                    <td>${infoBean.publishDateInfo}</td>
+                    <td>${infoBean.publishHourInfo}</td>
+                </tr>
+                #{/list}
+            </tbody>
+        </table>
+        <div class="pagination contentcenteralign">
+            <ul>
+            #{if pageNumber != null && pageNumber-1 > 0}
+                <li><a href="@{Application.index(cityName,pageNumber-1)}">Prev</a></li>
+            #{/if}
+
+            #{list items:pageNumberList,as:'item'}
+                <li><a href="@{Application.index(cityName,item_index)}">${item_index}</a></li>
+            #{/list}
+
+            #{if pageNumber != null && pageNumber <= results.size()}
+                <li><a href="@{Application.index(cityName,pageNumber+1)}">Next</a></li>
+            #{/if}
+            </ul>
+        </div>
+    </div>
+
+</div>

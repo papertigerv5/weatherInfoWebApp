@@ -1,0 +1,15 @@
+city=城市
+name=名称
+wind=风力
+level=级别
+weather=天气
+direction=方向
+publish=发布
+time=时间
+hour=小时
+status=情况
+
+
+city.weatherinfo.startBackgroundJobs=开启后台服务
+
+country.city.districtInfo=获取城市地区信息
