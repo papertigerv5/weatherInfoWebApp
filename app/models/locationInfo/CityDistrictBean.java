@@ -15,6 +15,8 @@ import java.util.List;
  */
 @Entity
 public class CityDistrictBean extends Model {
+    public CityDistrictBean() {
+    }
 
     public CityDistrictBean(String provinceNo,String cityNo, String districtNo, String districtName) {
         this.provinceNo = provinceNo;
