@@ -25,7 +25,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class FetchCityDistrictWeatherInfoService {
 
     public void startFetchCityDistrictScheduledActions(){
-        fetchScheduledTimer.schedule(new FetchCityWeatherInfoTimerTask(),0,TIMEGAP);
+        fetchScheduledTimer.schedule(fetchCityWeatherInfoTimerTask,0,TIMEGAP);
     }
 
     public void startFetchCityDistrictAction(){
@@ -73,6 +73,7 @@ public class FetchCityDistrictWeatherInfoService {
         @Override
         public void run(){
             for (int threadIndex = 0; threadIndex < DOWNLOADTHEADCOUNTS; threadIndex++){
+                finished[threadIndex] = false;
                 executorService.submit(downloadJobs[threadIndex]);
             }
 
@@ -142,9 +143,9 @@ public class FetchCityDistrictWeatherInfoService {
     private class StoreWebInfoDBHelper implements Runnable{
         @Override
         public void run(){
+            int count = 0;
             try {
                 WebSiteBean siteBean = webSiteBeanStoreHouse.take();
-                int count = 0;
                 while(!siteBean.isEndFlag()){
                     long currentMills = System.currentTimeMillis();
                     WeatherInfoBean weatherInfoBean = parseWebSiteBeanToWeatherInfoBeanService.parseWebSiteToWeatherInfoBean(siteBean);
@@ -154,11 +155,10 @@ public class FetchCityDistrictWeatherInfoService {
                     count++;
                     siteBean = webSiteBeanStoreHouse.take();
                 }
-
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
+            System.out.println(count + " WeatherInfoBeans Saved the Finished");
         }
     }
 
@@ -171,9 +171,9 @@ public class FetchCityDistrictWeatherInfoService {
 
 
     //Some parameters.
-    private final int DOWNLOADTHEADCOUNTS = 20;
+    private final int DOWNLOADTHEADCOUNTS = 10;
     private final int PARSEANDSAVETHREADCOUNTS = 1;
-    private final long TIMEGAP = 45*60*1000;
+    private final long TIMEGAP = 30*60*1000;
 
 
     //Thread Resources.
@@ -192,5 +192,9 @@ public class FetchCityDistrictWeatherInfoService {
     private ParseWebSiteBeanToWeatherInfoBeanService parseWebSiteBeanToWeatherInfoBeanService = ParseWebSiteBeanToWeatherInfoBeanService.getParseWebSiteBeanToWeatherInfoBeanServiceInstance();
     private StoreWeatherInfoBeanService storeWeatherInfoBeanService = StoreWeatherInfoBeanService.getStoreWeatherInfoBeanServiceInstance();
 
+    //Task Instance
+    private FetchCityWeatherInfoTimerTask fetchCityWeatherInfoTimerTask = new FetchCityWeatherInfoTimerTask();
+
+    //Myself service.
     private static FetchCityDistrictWeatherInfoService fetchCityDistrictWeatherInfoService;
 }

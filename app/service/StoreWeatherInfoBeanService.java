@@ -38,6 +38,7 @@ public class StoreWeatherInfoBeanService {
         session.getTransaction().commit();
     }
 
+
     private StoreWeatherInfoBeanService(){
 
     }

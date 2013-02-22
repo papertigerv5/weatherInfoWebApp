@@ -56,7 +56,7 @@ public class FetchCityDistrictWeatherApp {
     private BlockingQueue<WebSiteBean> productString = new LinkedBlockingQueue<WebSiteBean>();
     private final int PRODUCETHREADCOUNT = 2;
     private boolean finished[] = new boolean[PRODUCETHREADCOUNT];
-    private long timeGap = 45*60*1000;   //45 minutes.
+    private long timeGap = 15*60*1000;   //45 minutes.
 
     //Service Instances
     private FetchCityDistrictWeatherInfoService fetchCityDistrictWeatherInfoService = FetchCityDistrictWeatherInfoService.getFetchCityDistrictWeatherInfoServiceInstance();

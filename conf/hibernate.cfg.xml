@@ -10,14 +10,19 @@
 
         <!-- properties -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://54.249.233.84:3306/weatherinfo</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">MyNewPass</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/weatherinfo</property>
+        <property name="connection.username">dawn</property>
+        <property name="connection.password">3205449</property>
         <property name="connection.useUnicode">true</property>
         <property name="connection.characterEncoding">UTF-8</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">false</property>
         <property name="hbm2ddl.auto">update</property>
+        <property name="c3p0.acquire_increment">1</property>
+        <property name="c3p0.idle_test_period">100</property> <!-- seconds -->
+        <property name="c3p0.max_size">100</property>
+        <property name="c3p0.max_statements">0</property>
+        <property name="c3p0.min_size">10</property>
 
         <mapping class="models.dbmodels.WeatherInfoBean"/>
         <mapping class="models.locationInfo.CityDistrictBean"/>
