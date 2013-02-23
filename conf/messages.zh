@@ -8,6 +8,12 @@ publish=发布
 time=时间
 hour=小时
 status=情况
+about=关于
+and=与
+question.post=问题反馈
+line.step=路线图
+update.log=更新日志
+verify.id=京ICP备11008151号
 
 waterCount=降水量
 sweetDegree=相对湿度

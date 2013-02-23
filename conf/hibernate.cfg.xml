@@ -11,8 +11,8 @@
         <!-- properties -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/weatherinfo</property>
-        <property name="connection.username">dawn</property>
-        <property name="connection.password">3205449</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">MyNewPassç</property>
         <property name="connection.useUnicode">true</property>
         <property name="connection.characterEncoding">UTF-8</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
