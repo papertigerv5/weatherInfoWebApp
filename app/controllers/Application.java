@@ -31,7 +31,7 @@ public class Application extends Controller {
             for(int i = 1; i <= totalPages; i++){
                 pageNumberList.add(i);
             }
-
+            System.out.println(results.size());
             placeName = cityName;
             render(results,pageNumberList,pageNumber,placeName);
         }
