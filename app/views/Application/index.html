@@ -46,10 +46,16 @@
             #{/if}
 
             #{list items:pageNumberList,as:'item'}
-                <li><a href="@{Application.index(cityName,item_index)}">${item_index}</a></li>
+                #{if pageNumber == item_index}
+                    <li class="active">
+                #{/if}
+                #{else}
+                    <li class="disabled">
+                #{/else}
+                    <a href="@{Application.index(cityName,item_index)}">${item_index}</a></li>
             #{/list}
 
-            #{if pageNumber != null && pageNumber <= results.size()}
+            #{if pageNumber != null && pageNumber < pageNumberList.size()}
                 <li><a href="@{Application.index(cityName,pageNumber+1)}">Next</a></li>
             #{/if}
             </ul>

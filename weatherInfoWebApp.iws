@@ -4,7 +4,21 @@
     <bookmark url="file://$PROJECT_DIR$/app/models/locationInfo/CityDistrictBean.java" description="    private String discritName;&#10;" line="105" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da0abd2c-839a-42fb-951e-587def71b638" name="Default" comment="" />
+    <list default="true" id="da0abd2c-839a-42fb-951e-587def71b638" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/classes/service/FetchCityDistrictWeatherInfoService$DownLoadWebResourceHelper.class" afterPath="$PROJECT_DIR$/tmp/classes/service/FetchCityDistrictWeatherInfoService$DownLoadWebResourceHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/classes/service/FetchCityDistrictWeatherInfoService$FetchCityWeatherInfoTimerTask.class" afterPath="$PROJECT_DIR$/tmp/classes/service/FetchCityDistrictWeatherInfoService$FetchCityWeatherInfoTimerTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/classes/service/FetchCityDistrictWeatherInfoService.class" afterPath="$PROJECT_DIR$/tmp/classes/service/FetchCityDistrictWeatherInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService$DownLoadWebResourceHelper" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService$DownLoadWebResourceHelper" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService$FetchCityWeatherInfoTimerTask" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService$FetchCityWeatherInfoTimerTask" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService$StoreWebInfoDBHelper" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService$StoreWebInfoDBHelper" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/service.FetchCityDistrictWeatherInfoService" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.java" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/index.html" afterPath="$PROJECT_DIR$/app/views/Application/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weatherInfoWebApp.iws" afterPath="$PROJECT_DIR$/weatherInfoWebApp.iws" />
+    </list>
     <ignored path="weatherInfoWebApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361352554407" ignored="false" />
@@ -13,11 +27,12 @@
     <file path="/application.conf" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361420345271" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361532455149" ignored="false" />
     <file path="/main.html" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361354626761" ignored="false" />
-    <file path="/Application.java" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361357756473" ignored="false" />
-    <file path="/index.html" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361370145235" ignored="false" />
+    <file path="/Application.java" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361592548483" ignored="false" />
+    <file path="/index.html" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361592657504" ignored="false" />
     <file path="/messages.zh" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361369994592" ignored="false" />
     <file path="/StoreWeatherInfoBeanService.java" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361419493458" ignored="false" />
     <file path="/FetchCityDistrictWeatherInfoService.java" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361540968205" ignored="false" />
+    <file path="/Dummy.txt" changelist="da0abd2c-839a-42fb-951e-587def71b638" time="1361592419465" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +47,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -67,7 +82,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -86,10 +101,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FetchCityDistrictWeatherInfoService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FetchCityDistrictWeatherInfoService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/service/FetchCityDistrictWeatherInfoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="35" selection-start="6908" selection-end="6908" vertical-scroll-proportion="1.835443">
+            <state line="159" column="45" selection-start="6393" selection-end="6393" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="40" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,15 +137,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.conf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/application.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="15" selection-start="3062" selection-end="3062" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WeatherInfoBean.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/dbmodels/WeatherInfoBean.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -140,10 +155,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="46" selection-start="1407" selection-end="1407" vertical-scroll-proportion="-11.958333">
+            <state line="54" column="89" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.44924405">
               <folding />
             </state>
           </provider>
@@ -174,20 +189,28 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/conf/dependencies.yml" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
         <option value="$PROJECT_DIR$/app/models/locationInfo/CityDistrictBean.java" />
         <option value="$PROJECT_DIR$/conf/messages.zh" />
-        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
         <option value="$PROJECT_DIR$/app/service/StoreWeatherInfoBeanService.java" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/conf/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/app/applications/FetchCityDistrictWeatherApp.java" />
         <option value="$PROJECT_DIR$/app/service/FetchCityDistrictWeatherInfoService.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
       </list>
     </option>
   </component>
@@ -195,7 +218,7 @@
     <option name="width" value="1440" />
     <option name="height" value="922" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -223,6 +246,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,13 +267,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
@@ -260,8 +283,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -283,19 +306,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -326,6 +336,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -339,6 +362,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -360,13 +390,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="Server" type="Application" factoryName="Application">
@@ -425,13 +448,18 @@
       <created>1361248107715</created>
       <updated>1361248107715</updated>
     </task>
+    <task id="LOCAL-00001" summary="IDE集成Git">
+      <created>1361592424084</created>
+      <updated>1361592424084</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="922" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -450,7 +478,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -496,7 +524,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="IDE集成Git" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -509,6 +537,7 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="IDE集成Git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -544,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/play/framework/src/play/db/jpa/JPABase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="271" column="18" selection-start="9543" selection-end="9551" vertical-scroll-proportion="0.33333334" />
@@ -573,13 +595,6 @@
     <entry file="file://$PROJECT_DIR$/conf/messages.zh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="11" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="46" selection-start="1407" selection-end="1407" vertical-scroll-proportion="-11.958333">
           <folding />
         </state>
       </provider>
@@ -621,7 +636,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/service/FetchCityDistrictWeatherInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="35" selection-start="6908" selection-end="6908" vertical-scroll-proportion="1.835443">
+        <state line="159" column="45" selection-start="6393" selection-end="6393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="40" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="89" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.44924405">
           <folding />
         </state>
       </provider>
@@ -643,7 +672,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate</last-edited>
+          <last-edited>Hibernate (weatherInfoWebApp)|Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

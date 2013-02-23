@@ -19,13 +19,12 @@ public class Application extends Controller {
             if(pageNumber == 0){
                 pageNumber = 1;
             }
-            int pageCounts = 2;
-            int beginCount = (pageNumber - 1)* pageCounts;
+            int beginCount = (pageNumber - 1)* PAGE_COUNTS;
             long satisfiedCount = WeatherInfoBean.count("districtName=?", cityName);
-            int totalPages = (int)(satisfiedCount/pageCounts);
-            totalPages = (int)satisfiedCount%pageCounts==0?totalPages:totalPages+1;
+            int totalPages = (int)(satisfiedCount/ PAGE_COUNTS);
+            totalPages = (int)satisfiedCount% PAGE_COUNTS ==0?totalPages:totalPages+1;
 
-            List<WeatherInfoBean> results = WeatherInfoBean.find("districtName=?",cityName).from(beginCount).fetch(pageCounts);
+            List<WeatherInfoBean> results = WeatherInfoBean.find("districtName=?",cityName).from(beginCount).fetch(PAGE_COUNTS);
 
             List<Integer> pageNumberList = new ArrayList<Integer>();
             //Stupid solution.
@@ -38,6 +37,7 @@ public class Application extends Controller {
         }
     }
 
+    private static final int PAGE_COUNTS = 10;
     private static final String PLSINPUTCITYNAME = "请输入城市名称";
 
 }
