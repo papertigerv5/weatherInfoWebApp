@@ -158,6 +158,8 @@ public class FetchCityDistrictWeatherInfoService {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            //Just try to run the gc. There is no any promise.
+            System.gc();
             System.out.println(count + " WeatherInfoBeans Saved the Finished");
         }
     }
