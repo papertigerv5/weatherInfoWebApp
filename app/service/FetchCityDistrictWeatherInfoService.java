@@ -159,9 +159,17 @@ public class FetchCityDistrictWeatherInfoService {
                 e.printStackTrace();
             }
             //Just try to run the gc. There is no any promise.
-            System.gc();
+            tryToReleaseJVMMemory();
             System.out.println(count + " WeatherInfoBeans Saved the Finished");
         }
+    }
+
+
+    private void tryToReleaseJVMMemory(){
+        Runtime runtime = Runtime.getRuntime();
+        runtime.gc();
+        runtime.gc();
+        runtime.gc();
     }
 
     //Location Info beans.
@@ -175,7 +183,7 @@ public class FetchCityDistrictWeatherInfoService {
     //Some parameters.
     private final int DOWNLOADTHEADCOUNTS = 10;
     private final int PARSEANDSAVETHREADCOUNTS = 1;
-    private final long TIMEGAP = 30*60*1000;
+    private final long TIMEGAP = 15*60*1000;
 
 
     //Thread Resources.
