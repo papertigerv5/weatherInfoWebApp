@@ -72,6 +72,13 @@ public class FetchCityDistrictWeatherInfoService {
     private class FetchCityWeatherInfoTimerTask extends TimerTask{
         @Override
         public void run(){
+            tryToReleaseJVMMemory();
+            try {
+                Thread.sleep(1000*10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }//Sleep thread
+
             for (int threadIndex = 0; threadIndex < DOWNLOADTHEADCOUNTS; threadIndex++){
                 finished[threadIndex] = false;
                 executorService.submit(downloadJobs[threadIndex]);
@@ -183,7 +190,7 @@ public class FetchCityDistrictWeatherInfoService {
     //Some parameters.
     private final int DOWNLOADTHEADCOUNTS = 10;
     private final int PARSEANDSAVETHREADCOUNTS = 1;
-    private final long TIMEGAP = 15*60*1000;
+    private final long TIMEGAP = 60*60*1000;
 
 
     //Thread Resources.
