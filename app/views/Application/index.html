@@ -41,8 +41,8 @@
         </table>
         <div class="pagination contentcenteralign">
             <ul>
-            #{if pageNumber != null && pageNumber-1 > 0}
-                <li><a href="@{Application.index(cityName,pageNumber-1)}">Prev</a></li>
+                #{if checkedPageIndex != null && checkedPageIndex > 1}
+                <li><a href="@{Application.index(cityName,checkedPageIndex-1,startPageIndex)}">Prev</a></li>
             #{/if}
 
             #{list items:pageNumberList,as:'item'}
@@ -52,11 +52,13 @@
                 #{else}
                     <li class="disabled">
                 #{/else}
-                    <a href="@{Application.index(cityName,item_index)}">${item_index}</a></li>
+
+                    <a href="@{Application.index(cityName,item,startPageIndex)}">${item}</a></li>
+
             #{/list}
 
-            #{if pageNumber != null && pageNumber < pageNumberList.size()}
-                <li><a href="@{Application.index(cityName,pageNumber+1)}">Next</a></li>
+            #{if checkedPageIndex != null && checkedPageIndex < totalPages}
+                <li><a href="@{Application.index(cityName,checkedPageIndex+1,startPageIndex)}">Next</a></li>
             #{/if}
             </ul>
         </div>
