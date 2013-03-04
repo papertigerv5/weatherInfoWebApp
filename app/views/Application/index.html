@@ -46,7 +46,7 @@
             #{/if}
 
             #{list items:pageNumberList,as:'item'}
-                #{if pageNumber == item_index}
+                #{if checkedPageIndex == item_index}
                     <li class="active">
                 #{/if}
                 #{else}
